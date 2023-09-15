@@ -1,0 +1,11 @@
+[Unit]
+Description=FlightLogger
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /path-to-flights.py/flights.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

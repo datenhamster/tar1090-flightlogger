@@ -50,3 +50,6 @@ In the config.py file some things can and should be configured.
         self.logexist=False
 ```
 
+## Running as a service
+
+I run the script on my Pi as a service. See the service directory for the file.
