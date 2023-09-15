@@ -1,19 +1,19 @@
 # tar1090-flightlogger
-Python Flight logger for writing seen planes to a database
+Python Flight logger for recording seen planes to a database
 
 ## Why?
 
-Thanks to wiedehopf and his repositories [readsb](https://github.com/wiedehopf/readsb) and [tar1090](https://github.com/wiedehopf/tar1090) I am running a ADS-B Flight Radar on a Raspberry Pi Zero.
+Thanks to wiedehopf and his repositories [readsb](https://github.com/wiedehopf/readsb) and [tar1090](https://github.com/wiedehopf/tar1090) I am running an ADS-B flight radar on a Raspberry Pi Zero.
 
-While learning Python I have written a script for writing all seen planes into an SQLite-Database. Sometimes it crashed and it only logged the transponder Code of the plane. A second srcipt run by a cronjob searched the web for more data like the registration, type, airline and manufacturer and updates the database.
+While learning Python I have written a script for recording all seen planes into an SQLite-Database. Sometimes it crashed and only logged the transponder code of the plane. A second script run by a cronjob searched the web for more data like registration, type, airline and manufacturer, and updates the database.
 
-With low knowledge and watching a course for object oriented programming I decied to rewrite my scripts. I integrated the web scrapping and made it better working for my needs.
+With little knowledge and watching a course for object oriented programming I decided to rewrite my scripts. I integrated the web scraping.
 
-I know this is not perfect work. It helped my learning and get better in Python. It helps me improving my skills. And I think it will grow as I am learning more and more.
+I know this is not perfect. It helped me to learn Python and improve my skills.
 
-## What is logged?
+## Data logged
 
-For my needs I logged basic information in the database. So I made entries for
+I logged basic information in the database:
 
 - icaohex
 - registration
@@ -24,7 +24,7 @@ For my needs I logged basic information in the database. So I made entries for
 - lastseen date
 - count
 
-As this is hardcoded it needs some work to change it. I also change or add some data in airplane.py to have consistend data as not all sources use the same format or names for the manufacturer, the type or the airline.
+As this is hardcoded it needs some work to change it. I also change or add some data in airplane.py to have consistent data as not all sources use the same format or names for the manufacturer, the type or the airline.
 
 ## config.py
 
